@@ -1,0 +1,123 @@
+\RequirePackage[svgnames]{xcolor}
+
+\documentclass[11pt,letterpaper]{mystyle}
+
+\usepackage[all]{hypcap}
+\usepackage[svgnames]{xcolor}
+\usepackage[comma,authoryear,compress]{natbib}
+\bibliographystyle{plainnat}
+
+\usepackage{hyperref}[citecolor=lightblue]
+
+\hypersetup{
+    colorlinks = true,
+    citecolor = {YaleBlue},
+}
+
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{microtype}
+\usepackage{graphicx}
+\expandafter\def\csname ver@subfig.sty\endcsname{}
+\usepackage{booktabs} %
+\usepackage{float}
+\usepackage{bigstrut}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{nicefrac}
+\usepackage{dsfont}
+\usepackage{enumitem}
+\usepackage{subcaption}
+\usepackage{graphicx,subfig}
+\usepackage{cleveref}
+\usepackage{bxcoloremoji}
+
+\usepackage{float}
+
+\setlength\parindent{0pt}
+
+\usepackage[utf8]{inputenc} %
+\usepackage[T1]{fontenc}    %
+\usepackage{hyperref}       %
+\usepackage{url}            %
+\usepackage{booktabs}       %
+\usepackage{amsfonts}       %
+\usepackage{nicefrac}       %
+\usepackage{microtype}      %
+\usepackage{graphicx}
+\usepackage{subcaption} % Ensure subfigure or subtable environments are used if this package is included.
+\usepackage{amssymb}
+\usepackage{fdsymbol}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{enumitem}
+\usepackage{stackengine}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{color}
+\usepackage{adjustbox}
+
+\usepackage{rotating}
+\usepackage{makecell}
+
+\input{macro}
+
+\newtcolorbox{AIbox}[2][]{aibox,title=#2,#1}
+\definecolor{lightblue}{rgb}{0.22,0.45,0.70}%
+\definecolor{Gray}{gray}{0.95}
+\definecolor{Cornsilk}{rgb}{1.0, 0.97, 0.86}
+
+\newcommand{\williex}[1]{{\color{magenta}WN: #1}}
+\newcommand{\olcomment}[1]{{\color{olive}[OL: #1]}}
+\newcommand{\wss}[1]{{\color{blue}WSS: #1}}
+\newcommand{\jcomment}[1]{{\color{purple}Julian: #1}}
+\newcommand{\omer}[1]{{\color{green}ömer: #1}}
+\newcommand{\enes}[1]{{\color{orange}enes: #1}}
+\newcommand{\todo}[1]{{\color{red}TODO: #1}}
+
+\usepackage{amsmath}
+
+\usepackage[all]{hypcap}
+
+% Title
+\title{\paperlogo{} Towards a Clean, Unified, and Aesthetically Pleasing arXiv Template}
+
+% Running title
+\runningtitle{\paperlogo{} Towards a Clean, Unified, and Aesthetically Pleasing arXiv Template}
+
+\author{
+  Qwen$^1$,
+  DeepSeek$^1$, and
+  Rongsheng Wang
+}
+
+\affil[1]{LLMs}
+\affil[2]{Human}
+
+\correspondingauthor{Rongsheng Wang \href{https://wangrongsheng.github.io}{https://wangrongsheng.github.io}; Email \href{mailto:wang.rongsheng@outlook.com}{wang.rongsheng@outlook.com}}
+
+\begin{document}
+
+\input{sections/abstract}
+
+\maketitle
+\vspace{3mm}
+\input{sections/introduction}
+\input{sections/relatedwork}
+\input{sections/method}
+\input{sections/experiments}
+\input{sections/discussions}
+% \clearpage
+\input{sections/conclusion}
+\input{sections/acknowledge}
+\clearpage
+\bibliography{main}
+
+\appendix
+\input{sections/appendix}
+\appendix
+\end{document}
