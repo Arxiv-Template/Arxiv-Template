@@ -19,3 +19,8 @@ git clone https://github.com/Arxiv-Template/Arxiv-Template.git
 ```
 
 2. Load it locally or use [Overleaf](https://www.overleaf.com/).
+
+#### Recommend
+
+- https://github.com/yzhao062/cs-paper-checklist
+- https://github.com/hzwer/WritingAIPaper
